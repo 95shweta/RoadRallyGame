@@ -1,0 +1,81 @@
+*{
+    margin : 0px;
+    padding : 0px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.hide { display: none; }
+
+.game{
+    width: 100%;
+    height: 100vh;
+    background-image: url("../images/road.png");
+    background-repeat: no-repeat; 
+    background-size: 100% 100%;
+}
+
+.startScreen{    
+    position: absolute; /* to make the start screen in center*/
+    left: 50%; /* left, top and transform(translate) will help inner div to be in center wrt outer div */
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid #ff6b6b;
+    z-index: 1; /* this will help the content to be on top rather than behind the div*/
+    color: white;
+    background-color: #ee5253;
+    word-spacing: 5px;
+    letter-spacing: 1.5px;
+    font-size: 20px;
+    width: 50%;
+    margin:auto;
+    padding: 15px;
+    text-align: center;
+    cursor: pointer;
+    line-height: 25px;
+    text-transform: capitalize;
+    box-shadow: 0 5px 5px #777; /* horizontal-offset vertical-offset shadow/blur color*/
+} 
+
+.moveableCar, .otherCars{
+    width: 55px;
+    height: 80px; 
+    position: absolute;
+    bottom: 100px;
+    
+    /* filter: invert(1) brightness(50%) sepia(100%) saturate(10000%); */
+    /* background-repeat: no-repeat;
+    background-size: 100% 100%;     */
+    background-color: darkred;
+}
+
+.createLines{
+    width: 10px;
+    background: white;
+    height: 100px;
+    margin-left: 195px;
+    position: absolute; 
+}
+
+.gameArea{
+    height: 100vh;
+    width: 400px;
+    background: #2d3436;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+    border-right: 5px dashed #c8d6e5;
+    border-left: 5px dashed #c8d6e5;
+ }
+
+.scoreDashboard{
+    position: absolute;
+    top: 15px;
+    left: 40px;
+    background-color: teal;
+    width: 200px;
+    line-height: 40px;
+    text-align: center;
+    color: white;
+    font-size: 1.5em;
+    box-shadow: 0 5px 5px #777;
+}
